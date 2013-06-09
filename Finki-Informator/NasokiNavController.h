@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  NasokiNavController.h
 //  Finki-Informator
 //
 //  Created by Dado on 5/21/13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) IBOutlet UIWindow *window;
-
+@interface NasokiNavController : UINavigationController
+// test
 @end
