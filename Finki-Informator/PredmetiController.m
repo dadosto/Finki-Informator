@@ -1,24 +1,26 @@
 //
-//  NasokaDetailController.m
+//  PredmetiController.m
 //  Finki-Informator
 //
-//  Created by Dado on 5/22/13.
+//  Created by Dado on 6/12/13.
 //  Copyright (c) 2013 Finki. All rights reserved.
 //
 
-#import "NasokaDetailController.h"
+#import "PredmetiController.h"
 
-@interface NasokaDetailController ()
+@interface PredmetiController ()
 
 @end
 
-@implementation NasokaDetailController
+@implementation PredmetiController
+
 @synthesize list;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
-    if (self) {
+    if (self)
+    {
         // Custom initialization
     }
     return self;
@@ -28,9 +30,10 @@
 {
     [super viewDidLoad];
 
+    
     if (list == nil)
     {
-        NSMutableArray *array = [[NSMutableArray alloc] initWithObjects: @"Opsti Informacii", @"Steknata Titula", @"Vremetraenje", @"Predmeti", nil];
+        NSMutableArray *array = [[NSMutableArray alloc] initWithObjects: @"1 Semestar",@"2 Semestar",@"3 Semestar",@"4 Semestar", @"5 Semestar",@"6 Semestar",@"7 Semestar",@"8 Semestar", nil];
         self.list = array;
     }
     
@@ -49,18 +52,18 @@
 
 #pragma mark - Table view data source
 
-/*- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 0;
-}*/
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [list count];
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -78,6 +81,7 @@
     cell.textLabel.text = rowTitle;
     
     return cell;
+
 }
 
 #pragma mark - Table view delegate

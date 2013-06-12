@@ -21,6 +21,7 @@
 		086690F8174C20690090828B /* NasokiNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086690F6174C20690090828B /* NasokiNavController.xib */; };
 		086690FC174C24E40090828B /* NasokiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086690FA174C24E40090828B /* NasokiController.m */; };
 		086690FD174C24E40090828B /* NasokiController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086690FB174C24E40090828B /* NasokiController.xib */; };
+		089EC9E71768B08200466602 /* PredmetiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 089EC9E61768B08200466602 /* PredmetiController.m */; };
 		08A68EB2174CDC3500021DB9 /* NasokaDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A68EB1174CDC3500021DB9 /* NasokaDetailController.m */; };
 		08A68EB5174CEC5800021DB9 /* NasokaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A68EB4174CEC5700021DB9 /* NasokaCell.m */; };
 		08A68EB7174CEC8800021DB9 /* NasokaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A68EB6174CEC8800021DB9 /* NasokaCell.xib */; };
@@ -59,11 +60,15 @@
 		086690F9174C24E40090828B /* NasokiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NasokiController.h; sourceTree = "<group>"; };
 		086690FA174C24E40090828B /* NasokiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NasokiController.m; sourceTree = "<group>"; };
 		086690FB174C24E40090828B /* NasokiController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NasokiController.xib; sourceTree = "<group>"; };
+		089EC9E51768B08200466602 /* PredmetiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredmetiController.h; sourceTree = "<group>"; };
+		089EC9E61768B08200466602 /* PredmetiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredmetiController.m; sourceTree = "<group>"; };
 		08A68EB0174CDC3500021DB9 /* NasokaDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NasokaDetailController.h; sourceTree = "<group>"; };
 		08A68EB1174CDC3500021DB9 /* NasokaDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NasokaDetailController.m; sourceTree = "<group>"; };
 		08A68EB3174CEC5700021DB9 /* NasokaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NasokaCell.h; sourceTree = "<group>"; };
 		08A68EB4174CEC5700021DB9 /* NasokaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NasokaCell.m; sourceTree = "<group>"; };
 		08A68EB6174CEC8800021DB9 /* NasokaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NasokaCell.xib; sourceTree = "<group>"; };
+		08AC52181768A51E000604C6 /* Tweet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		08AC52191768A51E000604C6 /* Tweet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 		08AF4780174D162B00B18684 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		08AF4781174D162B00B18684 /* predmeti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = predmeti.png; sourceTree = "<group>"; };
 		08AF4782174D162B00B18684 /* titula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titula.png; sourceTree = "<group>"; };
@@ -126,6 +131,8 @@
 		086690D3174C19190090828B /* Finki-Informator */ = {
 			isa = PBXGroup;
 			children = (
+				08AC52181768A51E000604C6 /* Tweet.h */,
+				08AC52191768A51E000604C6 /* Tweet.m */,
 				086690D4174C19190090828B /* Supporting Files */,
 				086690DC174C191A0090828B /* AppDelegate.h */,
 				086690DD174C191A0090828B /* AppDelegate.m */,
@@ -154,6 +161,8 @@
 				08AF4793174D2D9C00B18684 /* TitulaController.h */,
 				08AF4794174D2D9D00B18684 /* TitulaController.m */,
 				08AF4795174D2D9D00B18684 /* TitulaController.xib */,
+				089EC9E51768B08200466602 /* PredmetiController.h */,
+				089EC9E61768B08200466602 /* PredmetiController.m */,
 			);
 			path = "Finki-Informator";
 			sourceTree = "<group>";
@@ -270,6 +279,7 @@
 				08AF478A174D18E000B18684 /* SemestriController.m in Sources */,
 				08AF4791174D2D3A00B18684 /* InfoController.m in Sources */,
 				08AF4796174D2D9E00B18684 /* TitulaController.m in Sources */,
+				089EC9E71768B08200466602 /* PredmetiController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
