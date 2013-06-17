@@ -102,7 +102,6 @@ static BOOL nibsRegistered = NO;
 {
     UIButton *btnClicked = (UIButton *)sender;
     NSInteger tag =btnClicked.tag;
-    //UITableViewCell *clickedCell = (UITableViewCell *)[[sender superview] superview];
     UITableViewCell *clickedCell = (UITableViewCell *)[sender superview];
     NSIndexPath *clickedButtonPath = [self.tableView indexPathForCell:clickedCell];
     NSInteger row = clickedButtonPath.row;
