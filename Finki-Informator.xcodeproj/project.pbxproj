@@ -131,13 +131,11 @@
 		086690D3174C19190090828B /* Finki-Informator */ = {
 			isa = PBXGroup;
 			children = (
-				08AC52181768A51E000604C6 /* Tweet.h */,
-				08AC52191768A51E000604C6 /* Tweet.m */,
 				086690D4174C19190090828B /* Supporting Files */,
+				08AF478B174D1A3100B18684 /* Sliki */,
 				086690DC174C191A0090828B /* AppDelegate.h */,
 				086690DD174C191A0090828B /* AppDelegate.m */,
 				086690EA174C19D80090828B /* Application.xib */,
-				08AF478B174D1A3100B18684 /* Sliki */,
 				086690F4174C20690090828B /* NasokiNavController.h */,
 				086690F5174C20690090828B /* NasokiNavController.m */,
 				086690F6174C20690090828B /* NasokiNavController.xib */,
@@ -163,6 +161,8 @@
 				08AF4795174D2D9D00B18684 /* TitulaController.xib */,
 				089EC9E51768B08200466602 /* PredmetiController.h */,
 				089EC9E61768B08200466602 /* PredmetiController.m */,
+				08AC52181768A51E000604C6 /* Tweet.h */,
+				08AC52191768A51E000604C6 /* Tweet.m */,
 			);
 			path = "Finki-Informator";
 			sourceTree = "<group>";
