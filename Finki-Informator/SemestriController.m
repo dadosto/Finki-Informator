@@ -91,7 +91,7 @@
     
      PredmetiController *CoursesController = [[PredmetiController alloc] initWithStyle:UITableViewStylePlain];
     
-    CoursesController.title = self.title;
+    CoursesController.title = [NSString stringWithFormat:@"Semestar %d", indexPath.item +1];
     CoursesController.nasoka = self.nasoka;
     CoursesController.numSemestar = indexPath.item +1;
     

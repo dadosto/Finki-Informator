@@ -91,7 +91,7 @@ static BOOL nibsRegistered = NO;
             if (childController3==nil)
                 childController3 = [[SemestriController alloc] initWithStyle:UITableViewStylePlain];
             childController3.nasoka = [selektiranSmer lowercaseString];
-            childController3.title = title;
+            childController3.title = [NSString stringWithFormat:@"Semestri za %@",selektiranSmer];
             [self.navigationController pushViewController:childController3 animated:YES];
             break;
         default:break;
