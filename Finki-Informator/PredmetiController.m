@@ -36,18 +36,21 @@
     {
         NSMutableArray *array = [[NSMutableArray alloc] initWithObjects: @"1 Semestar",@"2 Semestar",@"3 Semestar",@"4 Semestar", @"5 Semestar",@"6 Semestar",@"7 Semestar",@"8 Semestar", nil];
         
-        
+        //----------- KOD ZA ZEMANJE NA PODATOCI OD PARSE.COM -----------
         PFQuery *query = [PFQuery queryWithClassName:@"predmeti"];
         [query whereKey:@"key" equalTo:self.nasoka];
         [query whereKey:@"semester" equalTo:[NSString stringWithFormat:@"%d",self.numSemestar]];
+        
         [query findObjectsInBackgroundWithBlock:^(NSArray *courses, NSError *error){
             if(!error){
                 for(PFObject *course in courses){
-                    self.title = [course objectForKey:@"subject"];
+                    //ZA proverka dali raboti -> RABOTI :)
+                    //self.title = [course objectForKey:@"subject"];
                     [array addObject:[course objectForKey:@"subject"]];
                 }
             }
         }];
+        //------------ PARSE.COM ---------------
         
         self.list = array;
     }
