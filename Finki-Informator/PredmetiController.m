@@ -15,12 +15,13 @@
 @implementation PredmetiController
 
 @synthesize list;
+@synthesize nasoka;
+@synthesize numSemestar;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
-    if (self)
-    {
+    if (self) {
         // Custom initialization
     }
     return self;
@@ -29,17 +30,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
     
-    if (list == nil)
+    
+   if (list == nil)
     {
         NSMutableArray *array = [[NSMutableArray alloc] initWithObjects: @"1 Semestar",@"2 Semestar",@"3 Semestar",@"4 Semestar", @"5 Semestar",@"6 Semestar",@"7 Semestar",@"8 Semestar", nil];
+        
+        
+        PFQuery *query = [PFQuery queryWithClassName:@"predmeti"];
+        [query whereKey:@"key" equalTo:self.nasoka];
+        [query whereKey:@"semester" equalTo:[NSString stringWithFormat:@"%d",self.numSemestar]];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *courses, NSError *error){
+            if(!error){
+                for(PFObject *course in courses){
+                    self.title = [course objectForKey:@"subject"];
+                    [array addObject:[course objectForKey:@"subject"]];
+                }
+            }
+        }];
+        
         self.list = array;
     }
     
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
- 
+    
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
@@ -52,25 +68,24 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [list count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"SmerDetailCell";
+    static NSString *CellIdentifier = @"SemestriCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
+    
+    
+    // Configure the cell....
+    
+    if (cell == nil)
+    {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
@@ -81,7 +96,6 @@
     cell.textLabel.text = rowTitle;
     
     return cell;
-
 }
 
 #pragma mark - Table view delegate

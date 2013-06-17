@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface SemestriController : UITableViewController
-@property (strong, nonatomic) NSArray *list;
+@property (strong, nonatomic) NSMutableArray *list;
+@property (strong, nonatomic) NSString *nasoka;
 @end

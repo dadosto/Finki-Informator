@@ -90,6 +90,7 @@ static BOOL nibsRegistered = NO;
         case 3:
             if (childController3==nil)
                 childController3 = [[SemestriController alloc] initWithStyle:UITableViewStylePlain];
+            childController3.nasoka = [selektiranSmer lowercaseString];
             childController3.title = title;
             [self.navigationController pushViewController:childController3 animated:YES];
             break;
