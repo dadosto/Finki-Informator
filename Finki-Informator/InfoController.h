@@ -10,4 +10,5 @@
 
 @interface InfoController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *lblInfo;
+@property (strong, nonatomic) NSArray *list;
 @end
