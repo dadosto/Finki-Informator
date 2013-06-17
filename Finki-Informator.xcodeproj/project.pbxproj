@@ -37,6 +37,16 @@
 		08AF4797174D2D9E00B18684 /* TitulaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08AF4795174D2D9D00B18684 /* TitulaController.xib */; };
 		08B687EA174C411E00577687 /* InfoUpisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B687E8174C411E00577687 /* InfoUpisViewController.m */; };
 		08B687EB174C411E00577687 /* InfoUpisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B687E9174C411E00577687 /* InfoUpisViewController.xib */; };
+		C5D40DC7176F2C740098EAB9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DC6176F2C740098EAB9 /* Parse.framework */; };
+		C5D40DCA176F2CF00098EAB9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DC8176F2CC20098EAB9 /* AudioToolbox.framework */; };
+		C5D40DCC176F2D000098EAB9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DCB176F2D000098EAB9 /* CFNetwork.framework */; };
+		C5D40DCE176F2D100098EAB9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DCD176F2D100098EAB9 /* CoreLocation.framework */; };
+		C5D40DD0176F2D200098EAB9 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DCF176F2D200098EAB9 /* libz.1.1.3.dylib */; };
+		C5D40DD2176F2D280098EAB9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DD1176F2D280098EAB9 /* MobileCoreServices.framework */; };
+		C5D40DD4176F2D330098EAB9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DD3176F2D330098EAB9 /* QuartzCore.framework */; };
+		C5D40DD6176F2D3C0098EAB9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DD5176F2D3C0098EAB9 /* Security.framework */; };
+		C5D40DD8176F2D450098EAB9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DD7176F2D450098EAB9 /* StoreKit.framework */; };
+		C5D40DDA176F2D4C0098EAB9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DD9176F2D4C0098EAB9 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +95,16 @@
 		08B687E7174C411D00577687 /* InfoUpisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoUpisViewController.h; sourceTree = "<group>"; };
 		08B687E8174C411E00577687 /* InfoUpisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoUpisViewController.m; sourceTree = "<group>"; };
 		08B687E9174C411E00577687 /* InfoUpisViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoUpisViewController.xib; sourceTree = "<group>"; };
+		C5D40DC6176F2C740098EAB9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		C5D40DC8176F2CC20098EAB9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C5D40DCB176F2D000098EAB9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C5D40DCD176F2D100098EAB9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C5D40DCF176F2D200098EAB9 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		C5D40DD1176F2D280098EAB9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C5D40DD3176F2D330098EAB9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C5D40DD5176F2D3C0098EAB9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C5D40DD7176F2D450098EAB9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C5D40DD9176F2D4C0098EAB9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +112,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5D40DDA176F2D4C0098EAB9 /* SystemConfiguration.framework in Frameworks */,
+				C5D40DD8176F2D450098EAB9 /* StoreKit.framework in Frameworks */,
+				C5D40DD6176F2D3C0098EAB9 /* Security.framework in Frameworks */,
+				C5D40DD4176F2D330098EAB9 /* QuartzCore.framework in Frameworks */,
+				C5D40DD2176F2D280098EAB9 /* MobileCoreServices.framework in Frameworks */,
+				C5D40DD0176F2D200098EAB9 /* libz.1.1.3.dylib in Frameworks */,
+				C5D40DCE176F2D100098EAB9 /* CoreLocation.framework in Frameworks */,
+				086690D2174C19190090828B /* CoreGraphics.framework in Frameworks */,
+				C5D40DCC176F2D000098EAB9 /* CFNetwork.framework in Frameworks */,
+				C5D40DCA176F2CF00098EAB9 /* AudioToolbox.framework in Frameworks */,
 				086690CE174C19190090828B /* UIKit.framework in Frameworks */,
 				086690D0174C19190090828B /* Foundation.framework in Frameworks */,
-				086690D2174C19190090828B /* CoreGraphics.framework in Frameworks */,
+				C5D40DC7176F2C740098EAB9 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +134,15 @@
 		086690C1174C19190090828B = {
 			isa = PBXGroup;
 			children = (
+				C5D40DD9176F2D4C0098EAB9 /* SystemConfiguration.framework */,
+				C5D40DD7176F2D450098EAB9 /* StoreKit.framework */,
+				C5D40DD5176F2D3C0098EAB9 /* Security.framework */,
+				C5D40DD3176F2D330098EAB9 /* QuartzCore.framework */,
+				C5D40DD1176F2D280098EAB9 /* MobileCoreServices.framework */,
+				C5D40DCF176F2D200098EAB9 /* libz.1.1.3.dylib */,
+				C5D40DCD176F2D100098EAB9 /* CoreLocation.framework */,
+				C5D40DCB176F2D000098EAB9 /* CFNetwork.framework */,
+				C5D40DC8176F2CC20098EAB9 /* AudioToolbox.framework */,
 				086690D3174C19190090828B /* Finki-Informator */,
 				086690CC174C19190090828B /* Frameworks */,
 				086690CB174C19190090828B /* Products */,
@@ -121,6 +160,7 @@
 		086690CC174C19190090828B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5D40DC6176F2C740098EAB9 /* Parse.framework */,
 				086690CD174C19190090828B /* UIKit.framework */,
 				086690CF174C19190090828B /* Foundation.framework */,
 				086690D1174C19190090828B /* CoreGraphics.framework */,
@@ -356,6 +396,10 @@
 		086690E8174C191A0090828B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finki-Informator/Finki-Informator-Prefix.pch";
 				INFOPLIST_FILE = "Finki-Informator/Finki-Informator-Info.plist";
@@ -367,6 +411,10 @@
 		086690E9174C191A0090828B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finki-Informator/Finki-Informator-Prefix.pch";
 				INFOPLIST_FILE = "Finki-Informator/Finki-Informator-Info.plist";
