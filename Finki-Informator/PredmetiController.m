@@ -30,37 +30,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
-   if (list == nil)
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if (self.list == nil)
     {
-        NSMutableArray *array = [[NSMutableArray alloc] initWithObjects: @"1 Semestar",@"2 Semestar",@"3 Semestar",@"4 Semestar", @"5 Semestar",@"6 Semestar",@"7 Semestar",@"8 Semestar", nil];
+        NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:nil];
         
         //----------- KOD ZA ZEMANJE NA PODATOCI OD PARSE.COM -----------
         PFQuery *query = [PFQuery queryWithClassName:@"predmeti"];
         [query whereKey:@"key" equalTo:self.nasoka];
         [query whereKey:@"semester" equalTo:[NSString stringWithFormat:@"%d",self.numSemestar]];
         
-        [query findObjectsInBackgroundWithBlock:^(NSArray *courses, NSError *error){
-            if(!error){
-                for(PFObject *course in courses){
-                    //ZA proverka dali raboti -> RABOTI :)
-                    //self.title = [course objectForKey:@"subject"];
-                    [array addObject:[course objectForKey:@"subject"]];
-                }
-            }
-        }];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *courses, NSError *error)
+         {
+             if(!error)
+             {
+                 for(PFObject *course in courses)
+                 {
+                     //ZA proverka dali raboti -> RABOTI :)
+                     //self.title = [course objectForKey:@"subject"];
+                     [array addObject:[course objectForKey:@"subject"]];
+                 }
+                 self.list=array;
+                 [[self tableView] reloadData];
+             }
+         }];
         //------------ PARSE.COM ---------------
         
-        self.list = array;
-    }
-    
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+        //self.list = array;
+        
+   }
+
 }
 
 - (void)didReceiveMemoryWarning
