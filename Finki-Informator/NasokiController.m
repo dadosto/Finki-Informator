@@ -71,20 +71,24 @@ static BOOL nibsRegistered = NO;
 {
     NSString *selektiranSmer = [list objectAtIndex:row];
     NSString *title = [[NSString alloc] initWithFormat:@"Informacii za %@", selektiranSmer];
-    switch (contr)
+    /*switch (contr)
     {
         case 1:
             if (childController1==nil)
                 childController1 = [[InfoController alloc] init];
+            title = [[NSString alloc] initWithFormat:@"Informacii za %@", selektiranSmer];
             childController1.title = title;
-            childController1.lblInfo.text=title;
+            //childController1.lblInfo.text=title;
+            childController1.selektiranSemestar = row;
             [self.navigationController pushViewController:childController1 animated:YES];
             break;
+
         case 2:
             if (childController2==nil)
                 childController2 = [[TitulaController alloc] init];
+            title = [[NSString alloc] initWithFormat:@"Titula - %@", selektiranSmer];
             childController2.title = title;
-            childController2.lblTitula.text=title;
+            childController2.selektiranSemestar = row;
             [self.navigationController pushViewController:childController2 animated:YES];
             break;
         case 3:
@@ -95,7 +99,39 @@ static BOOL nibsRegistered = NO;
             [self.navigationController pushViewController:childController3 animated:YES];
             break;
         default:break;
+    }*/
+    
+    switch (contr)
+    {
+        case 1:
+            //UITableViewCell *clickedCell = (UITableViewCell *)[sender superview];
+            if (childController1==nil)
+                childController1 = [[InfoController alloc] init];
+            title = [[NSString alloc] initWithFormat:@"Informacii za %@", selektiranSmer];
+            childController1.title = title;
+            //childController1.lblInfo.text=title;
+            childController1.selektiranSemestar = row;
+            [self.navigationController pushViewController:childController1 animated:YES];
+            break;
+        case 2:
+            if (childController2==nil)
+                childController2 = [[TitulaController alloc] init];
+            title = [[NSString alloc] initWithFormat:@"Titula - %@", selektiranSmer];
+            childController2.title = title;
+            childController2.selektiranSemestar = row;
+            [self.navigationController pushViewController:childController2 animated:YES];
+            break;
+        case 3:
+            if (childController3==nil)
+                childController3 = [[SemestriController alloc] initWithStyle:UITableViewStylePlain];
+            title = [[NSString alloc] initWithFormat:@"Semestri - %@", selektiranSmer];
+            childController3.nasoka = [selektiranSmer lowercaseString];
+            childController3.title = title;
+            [self.navigationController pushViewController:childController3 animated:YES];
+            break;
+        default:break;
     }
+
 }
 
 

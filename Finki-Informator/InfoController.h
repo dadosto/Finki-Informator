@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface InfoController : UIViewController
-@property (strong, nonatomic) IBOutlet UILabel *lblInfo;
+@property (strong, nonatomic) IBOutlet UITextView *txtInfo;
 @property (strong, nonatomic) NSArray *list;
+@property NSInteger selektiranSemestar;
 @end

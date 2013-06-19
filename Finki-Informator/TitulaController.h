@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TitulaController : UIViewController
-@property (strong, nonatomic) IBOutlet UILabel *lblTitula;
+@property (strong, nonatomic) IBOutlet UITextView *txtInfo;
+@property (strong, nonatomic) NSArray *list;
+@property NSInteger selektiranSemestar;
 @end
