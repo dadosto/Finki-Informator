@@ -37,6 +37,8 @@
 		08AF4797174D2D9E00B18684 /* TitulaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08AF4795174D2D9D00B18684 /* TitulaController.xib */; };
 		08B687EA174C411E00577687 /* InfoUpisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B687E8174C411E00577687 /* InfoUpisViewController.m */; };
 		08B687EB174C411E00577687 /* InfoUpisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B687E9174C411E00577687 /* InfoUpisViewController.xib */; };
+		C3AAE00A1771CF04008D2BE1 /* twitter_logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C3AAE0091771CF04008D2BE1 /* twitter_logo.jpeg */; };
+		C3AAE0101771E361008D2BE1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3AAE00F1771E361008D2BE1 /* Social.framework */; };
 		C5D40DC7176F2C740098EAB9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DC6176F2C740098EAB9 /* Parse.framework */; };
 		C5D40DCA176F2CF00098EAB9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DC8176F2CC20098EAB9 /* AudioToolbox.framework */; };
 		C5D40DCC176F2D000098EAB9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DCB176F2D000098EAB9 /* CFNetwork.framework */; };
@@ -95,6 +97,8 @@
 		08B687E7174C411D00577687 /* InfoUpisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoUpisViewController.h; sourceTree = "<group>"; };
 		08B687E8174C411E00577687 /* InfoUpisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoUpisViewController.m; sourceTree = "<group>"; };
 		08B687E9174C411E00577687 /* InfoUpisViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoUpisViewController.xib; sourceTree = "<group>"; };
+		C3AAE0091771CF04008D2BE1 /* twitter_logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter_logo.jpeg; sourceTree = "<group>"; };
+		C3AAE00F1771E361008D2BE1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C5D40DC6176F2C740098EAB9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		C5D40DC8176F2CC20098EAB9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C5D40DCB176F2D000098EAB9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -112,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3AAE0101771E361008D2BE1 /* Social.framework in Frameworks */,
 				C5D40DDA176F2D4C0098EAB9 /* SystemConfiguration.framework in Frameworks */,
 				C5D40DD8176F2D450098EAB9 /* StoreKit.framework in Frameworks */,
 				C5D40DD6176F2D3C0098EAB9 /* Security.framework in Frameworks */,
@@ -160,6 +165,7 @@
 		086690CC174C19190090828B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3AAE00F1771E361008D2BE1 /* Social.framework */,
 				C5D40DC6176F2C740098EAB9 /* Parse.framework */,
 				086690CD174C19190090828B /* UIKit.framework */,
 				086690CF174C19190090828B /* Foundation.framework */,
@@ -224,6 +230,7 @@
 		08AF478B174D1A3100B18684 /* Sliki */ = {
 			isa = PBXGroup;
 			children = (
+				C3AAE0091771CF04008D2BE1 /* twitter_logo.jpeg */,
 				08AF4780174D162B00B18684 /* info.png */,
 				08AF4781174D162B00B18684 /* predmeti.png */,
 				08AF4782174D162B00B18684 /* titula.png */,
@@ -299,6 +306,7 @@
 				08AF478D174D25A600B18684 /* NasokaCellButton.xib in Resources */,
 				08AF4792174D2D3A00B18684 /* InfoController.xib in Resources */,
 				08AF4797174D2D9E00B18684 /* TitulaController.xib in Resources */,
+				C3AAE00A1771CF04008D2BE1 /* twitter_logo.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,5 +13,5 @@
 @property (strong, nonatomic) NSMutableArray *list;
 @property (strong, nonatomic) NSString *nasoka;
 @property NSInteger numSemestar;
-
+- (void)checkButtonTapped:(id)sender event:(id)event;
 @end

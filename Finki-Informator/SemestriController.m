@@ -79,7 +79,7 @@
     NSUInteger row = [indexPath row];
     NSString *rowTitle = [list objectAtIndex:row];
     cell.textLabel.text = rowTitle;
-    
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 

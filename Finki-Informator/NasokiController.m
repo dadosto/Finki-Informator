@@ -225,7 +225,7 @@ static BOOL nibsRegistered = NO;
     NSUInteger row = [indexPath row];
     NSString *rowTitle = [list objectAtIndex:row];
     cell.nasokaLabel.text = rowTitle;
-    
+    //.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
