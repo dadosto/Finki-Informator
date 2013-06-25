@@ -11,7 +11,7 @@
 @interface NasokiController : UITableViewController
 
 @property (strong, nonatomic) NSArray *list;
-
+@property (strong, nonatomic) NSArray *nasoki;
 - (IBAction)btnCellClicked:(id)sender;
 
 - (void)pushToNavStack:(NSInteger)contr forRow:(NSInteger)row;

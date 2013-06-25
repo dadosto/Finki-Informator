@@ -29,6 +29,7 @@ const int SEMESTRI = 3;
 static BOOL nibsRegistered = NO;
 
 @synthesize list;
+@synthesize nasoki;
 @synthesize childController1;
 @synthesize childController2;
 @synthesize childController3;
@@ -50,6 +51,9 @@ static BOOL nibsRegistered = NO;
     {
         NSMutableArray *array = [[NSMutableArray alloc] initWithObjects: @"IKI", @"INFO", @"ASI", @"PSIT", @"KNI", @"MT", @"PET", @"KE", nil];
         self.list = array;
+        NSMutableArray *arrayList = [[NSMutableArray alloc] initWithObjects: @"ИКИ", @"ИНФО", @"АСИ", @"ПСИТ", @"КНИ", @"МТ", @"ПЕТ", @"КЕ", nil];
+        self.list = arrayList;
+        self.nasoki = array;
     }
 
     // Uncomment the following line to preserve selection between presentations.
@@ -70,46 +74,16 @@ static BOOL nibsRegistered = NO;
 - (void)pushToNavStack:(NSInteger)contr forRow: (NSInteger) row
 {
     NSString *selektiranSmer = [list objectAtIndex:row];
+    NSString *nasoka = [self.nasoki objectAtIndex:row];
     NSString *title = [[NSString alloc] initWithFormat:@"Информации за %@", selektiranSmer];
-    /*switch (contr)
-    {
-        case 1:
-            if (childController1==nil)
-                childController1 = [[InfoController alloc] init];
-            title = [[NSString alloc] initWithFormat:@"Informacii za %@", selektiranSmer];
-            childController1.title = title;
-            //childController1.lblInfo.text=title;
-            childController1.selektiranSemestar = row;
-            [self.navigationController pushViewController:childController1 animated:YES];
-            break;
-
-        case 2:
-            if (childController2==nil)
-                childController2 = [[TitulaController alloc] init];
-            title = [[NSString alloc] initWithFormat:@"Titula - %@", selektiranSmer];
-            childController2.title = title;
-            childController2.selektiranSemestar = row;
-            [self.navigationController pushViewController:childController2 animated:YES];
-            break;
-        case 3:
-            if (childController3==nil)
-                childController3 = [[SemestriController alloc] initWithStyle:UITableViewStylePlain];
-            childController3.nasoka = [selektiranSmer lowercaseString];
-            childController3.title = [NSString stringWithFormat:@"Semestri za %@",selektiranSmer];
-            [self.navigationController pushViewController:childController3 animated:YES];
-            break;
-        default:break;
-    }*/
     
     switch (contr)
     {
         case 1:
-            //UITableViewCell *clickedCell = (UITableViewCell *)[sender superview];
             if (childController1==nil)
                 childController1 = [[InfoController alloc] init];
             title = [[NSString alloc] initWithFormat:@"Информации за %@", selektiranSmer];
             childController1.title = title;
-            //childController1.lblInfo.text=title;
             childController1.selektiranSemestar = row;
             [self.navigationController pushViewController:childController1 animated:YES];
             break;
@@ -125,7 +99,7 @@ static BOOL nibsRegistered = NO;
             if (childController3==nil)
                 childController3 = [[SemestriController alloc] initWithStyle:UITableViewStylePlain];
             title = [[NSString alloc] initWithFormat:@"Семестри - %@", selektiranSmer];
-            childController3.nasoka = [selektiranSmer lowercaseString];
+            childController3.nasoka = [nasoka lowercaseString];
             childController3.title = title;
             [self.navigationController pushViewController:childController3 animated:YES];
             break;
