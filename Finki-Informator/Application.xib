@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1552</int>
-		<string key="IBDocument.SystemVersion">12E55</string>
+		<string key="IBDocument.SystemVersion">11G63</string>
 		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1187.39</string>
-		<string key="IBDocument.HIToolboxVersion">626.00</string>
+		<string key="IBDocument.AppKitVersion">1138.51</string>
+		<string key="IBDocument.HIToolboxVersion">569.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">2083</string>
@@ -47,7 +47,6 @@
 				<object class="NSPSMatrix" key="NSFrameMatrix"/>
 				<string key="NSFrameSize">{320, 568}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSNextKeyView"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -88,7 +87,11 @@
 				<bool key="IBUIHorizontal">NO</bool>
 				<object class="IBUIViewController" key="IBUISelectedViewController" id="91521467">
 					<object class="IBUITabBarItem" key="IBUITabBarItem" id="566808938">
-						<string key="IBUITitle">Item</string>
+						<string key="IBUITitle">Храна</string>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">placesMapIcon.png</string>
+						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<reference key="IBUIParentViewController" ref="513006519"/>
@@ -104,6 +107,10 @@
 					<object class="IBUINavigationController" id="30055070">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="428329696">
 							<string key="IBUITitle">Item</string>
+							<object class="NSCustomResource" key="IBUIImage">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">infoTabIcon.png</string>
+							</object>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
 						<reference key="IBUIParentViewController" ref="513006519"/>
@@ -121,6 +128,7 @@
 							<string key="NSFrameSize">{0, 0}</string>
 							<string key="NSReuseIdentifierKey">_NS:15</string>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							<int key="IBUIBarStyle">1</int>
 						</object>
 						<array class="NSMutableArray" key="IBUIViewControllers">
 							<object class="IBUIViewController" id="979945036">
@@ -141,7 +149,11 @@
 					</object>
 					<object class="IBUIViewController" id="220979101">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="556166184">
-							<string key="IBUITitle">Item 2</string>
+							<string key="IBUITitle">Уписи</string>
+							<object class="NSCustomResource" key="IBUIImage">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">upisiIcon.png</string>
+							</object>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
 						<reference key="IBUIParentViewController" ref="513006519"/>
@@ -160,7 +172,6 @@
 					<int key="NSvFlags">266</int>
 					<string key="NSFrame">{{0, 519}, {320, 49}}</string>
 					<reference key="NSSuperview"/>
-					<reference key="NSNextKeyView"/>
 					<string key="NSReuseIdentifierKey">_NS:29</string>
 					<object class="NSColor" key="IBUIBackgroundColor">
 						<int key="NSColorSpace">3</int>
@@ -232,8 +243,8 @@
 						<reference key="object" ref="513006519"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="773802713"/>
-							<reference ref="220979101"/>
 							<reference ref="30055070"/>
+							<reference ref="220979101"/>
 							<reference ref="91521467"/>
 						</array>
 						<reference key="parent" ref="0"/>
@@ -339,6 +350,11 @@
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="infoTabIcon.png">{30, 30}</string>
+			<string key="placesMapIcon.png">{30, 30}</string>
+			<string key="upisiIcon.png">{30, 30}</string>
+		</dictionary>
 		<bool key="IBDocument.UseAutolayout">YES</bool>
 		<string key="IBCocoaTouchPluginVersion">2083</string>
 	</data>
