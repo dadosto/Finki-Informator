@@ -13,13 +13,19 @@
 @end
 
 @implementation InfoUpisViewController
-
+@synthesize list;
+@synthesize txtInfo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        if (list == nil)
+        {
+            NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"",nil];
+            self.list = array;
+        }
     }
     return self;
 }

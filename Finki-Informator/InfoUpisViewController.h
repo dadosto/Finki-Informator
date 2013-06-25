@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface InfoUpisViewController : UIViewController
-
+@property (strong, nonatomic) IBOutlet UITextView *txtInfo;
+@property (strong, nonatomic) NSArray *list;
 @end
