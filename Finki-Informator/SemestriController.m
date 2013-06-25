@@ -33,7 +33,7 @@
     
     if (list == nil)
     {
-        NSMutableArray *array = [[NSMutableArray alloc] initWithObjects: @"1 Semestar",@"2 Semestar",@"3 Semestar",@"4 Semestar", @"5 Semestar",@"6 Semestar",@"7 Semestar",@"8 Semestar", nil];
+        NSMutableArray *array = [[NSMutableArray alloc] initWithObjects: @"1 Семестар",@"2 Семестар",@"3 Семестар",@"4 Семестар", @"5 Семестар",@"6 Семестар",@"7 Семестар",@"8 Семестар", nil];
         self.list = array;
     }
     
@@ -91,7 +91,7 @@
     
      PredmetiController *CoursesController = [[PredmetiController alloc] initWithStyle:UITableViewStylePlain];
     
-    CoursesController.title = [NSString stringWithFormat:@"Semestar %d", indexPath.item +1];
+    CoursesController.title = [NSString stringWithFormat:@"Семестар %d", indexPath.item +1];
     CoursesController.nasoka = self.nasoka;
     CoursesController.numSemestar = indexPath.item +1;
     

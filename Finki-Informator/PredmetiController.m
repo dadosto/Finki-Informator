@@ -10,6 +10,7 @@
 //#import <Social/Social.h>
 //#import <Social/Social.h>
 #import "Social/Social.h"
+#import "DetailsController.h"
 
 @interface PredmetiController ()
 
@@ -55,7 +56,7 @@
                  {
                      //ZA proverka dali raboti -> RABOTI :)
                      //self.title = [course objectForKey:@"subject"];
-                     [array addObject:[course objectForKey:@"subject"]];
+                     [array addObject:course];
                  }
                  self.list=array;
                  [[self tableView] reloadData];
@@ -160,8 +161,8 @@
     cell.accessoryView = button;*/
     
     NSUInteger row = [indexPath row];
-    NSString *rowTitle = [list objectAtIndex:row];
-    cell.textLabel.text = rowTitle;
+    PFObject *rowTitle = [list objectAtIndex:row];
+    cell.textLabel.text = [rowTitle objectForKey:@"subject"];
     //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
@@ -174,12 +175,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    
+    DetailsController *detailsController = [[DetailsController alloc] init];
+
+    PFObject *crs = [list objectAtIndex:indexPath.row];
+    detailsController.course = crs;
+    
+    [self.navigationController pushViewController:detailsController animated:YES];
+    
 }
 
 /*- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath

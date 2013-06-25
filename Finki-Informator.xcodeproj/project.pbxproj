@@ -39,6 +39,11 @@
 		08B687EB174C411E00577687 /* InfoUpisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B687E9174C411E00577687 /* InfoUpisViewController.xib */; };
 		C3AAE00A1771CF04008D2BE1 /* twitter_logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C3AAE0091771CF04008D2BE1 /* twitter_logo.jpeg */; };
 		C3AAE0101771E361008D2BE1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3AAE00F1771E361008D2BE1 /* Social.framework */; };
+		C5851C701771F0B200B6993D /* DetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5851C6E1771F0B200B6993D /* DetailsController.m */; };
+		C5851C711771F0B200B6993D /* DetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5851C6F1771F0B200B6993D /* DetailsController.xib */; };
+		C5C4882117720094002BFB7A /* GeoLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4881F17720093002BFB7A /* GeoLocationViewController.m */; };
+		C5C4882217720094002BFB7A /* GeoLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5C4882017720094002BFB7A /* GeoLocationViewController.xib */; };
+		C5C488241772038E002BFB7A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C488231772038E002BFB7A /* MapKit.framework */; };
 		C5D40DC7176F2C740098EAB9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DC6176F2C740098EAB9 /* Parse.framework */; };
 		C5D40DCA176F2CF00098EAB9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DC8176F2CC20098EAB9 /* AudioToolbox.framework */; };
 		C5D40DCC176F2D000098EAB9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D40DCB176F2D000098EAB9 /* CFNetwork.framework */; };
@@ -99,6 +104,13 @@
 		08B687E9174C411E00577687 /* InfoUpisViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoUpisViewController.xib; sourceTree = "<group>"; };
 		C3AAE0091771CF04008D2BE1 /* twitter_logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter_logo.jpeg; sourceTree = "<group>"; };
 		C3AAE00F1771E361008D2BE1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C5851C6D1771F0B200B6993D /* DetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsController.h; sourceTree = "<group>"; };
+		C5851C6E1771F0B200B6993D /* DetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsController.m; sourceTree = "<group>"; };
+		C5851C6F1771F0B200B6993D /* DetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsController.xib; sourceTree = "<group>"; };
+		C5C4881E17720093002BFB7A /* GeoLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoLocationViewController.h; sourceTree = "<group>"; };
+		C5C4881F17720093002BFB7A /* GeoLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoLocationViewController.m; sourceTree = "<group>"; };
+		C5C4882017720094002BFB7A /* GeoLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeoLocationViewController.xib; sourceTree = "<group>"; };
+		C5C488231772038E002BFB7A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C5D40DC6176F2C740098EAB9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		C5D40DC8176F2CC20098EAB9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C5D40DCB176F2D000098EAB9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -116,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5D40DCE176F2D100098EAB9 /* CoreLocation.framework in Frameworks */,
+				C5C488241772038E002BFB7A /* MapKit.framework in Frameworks */,
 				C3AAE0101771E361008D2BE1 /* Social.framework in Frameworks */,
 				C5D40DDA176F2D4C0098EAB9 /* SystemConfiguration.framework in Frameworks */,
 				C5D40DD8176F2D450098EAB9 /* StoreKit.framework in Frameworks */,
@@ -123,7 +137,6 @@
 				C5D40DD4176F2D330098EAB9 /* QuartzCore.framework in Frameworks */,
 				C5D40DD2176F2D280098EAB9 /* MobileCoreServices.framework in Frameworks */,
 				C5D40DD0176F2D200098EAB9 /* libz.1.1.3.dylib in Frameworks */,
-				C5D40DCE176F2D100098EAB9 /* CoreLocation.framework in Frameworks */,
 				086690D2174C19190090828B /* CoreGraphics.framework in Frameworks */,
 				C5D40DCC176F2D000098EAB9 /* CFNetwork.framework in Frameworks */,
 				C5D40DCA176F2CF00098EAB9 /* AudioToolbox.framework in Frameworks */,
@@ -139,15 +152,6 @@
 		086690C1174C19190090828B = {
 			isa = PBXGroup;
 			children = (
-				C5D40DD9176F2D4C0098EAB9 /* SystemConfiguration.framework */,
-				C5D40DD7176F2D450098EAB9 /* StoreKit.framework */,
-				C5D40DD5176F2D3C0098EAB9 /* Security.framework */,
-				C5D40DD3176F2D330098EAB9 /* QuartzCore.framework */,
-				C5D40DD1176F2D280098EAB9 /* MobileCoreServices.framework */,
-				C5D40DCF176F2D200098EAB9 /* libz.1.1.3.dylib */,
-				C5D40DCD176F2D100098EAB9 /* CoreLocation.framework */,
-				C5D40DCB176F2D000098EAB9 /* CFNetwork.framework */,
-				C5D40DC8176F2CC20098EAB9 /* AudioToolbox.framework */,
 				086690D3174C19190090828B /* Finki-Informator */,
 				086690CC174C19190090828B /* Frameworks */,
 				086690CB174C19190090828B /* Products */,
@@ -165,6 +169,16 @@
 		086690CC174C19190090828B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5C488231772038E002BFB7A /* MapKit.framework */,
+				C5D40DD9176F2D4C0098EAB9 /* SystemConfiguration.framework */,
+				C5D40DD7176F2D450098EAB9 /* StoreKit.framework */,
+				C5D40DD5176F2D3C0098EAB9 /* Security.framework */,
+				C5D40DD3176F2D330098EAB9 /* QuartzCore.framework */,
+				C5D40DD1176F2D280098EAB9 /* MobileCoreServices.framework */,
+				C5D40DCF176F2D200098EAB9 /* libz.1.1.3.dylib */,
+				C5D40DCD176F2D100098EAB9 /* CoreLocation.framework */,
+				C5D40DCB176F2D000098EAB9 /* CFNetwork.framework */,
+				C5D40DC8176F2CC20098EAB9 /* AudioToolbox.framework */,
 				C3AAE00F1771E361008D2BE1 /* Social.framework */,
 				C5D40DC6176F2C740098EAB9 /* Parse.framework */,
 				086690CD174C19190090828B /* UIKit.framework */,
@@ -209,6 +223,12 @@
 				089EC9E61768B08200466602 /* PredmetiController.m */,
 				08AC52181768A51E000604C6 /* Tweet.h */,
 				08AC52191768A51E000604C6 /* Tweet.m */,
+				C5851C6D1771F0B200B6993D /* DetailsController.h */,
+				C5851C6E1771F0B200B6993D /* DetailsController.m */,
+				C5851C6F1771F0B200B6993D /* DetailsController.xib */,
+				C5C4881E17720093002BFB7A /* GeoLocationViewController.h */,
+				C5C4881F17720093002BFB7A /* GeoLocationViewController.m */,
+				C5C4882017720094002BFB7A /* GeoLocationViewController.xib */,
 			);
 			path = "Finki-Informator";
 			sourceTree = "<group>";
@@ -307,6 +327,8 @@
 				08AF4792174D2D3A00B18684 /* InfoController.xib in Resources */,
 				08AF4797174D2D9E00B18684 /* TitulaController.xib in Resources */,
 				C3AAE00A1771CF04008D2BE1 /* twitter_logo.jpeg in Resources */,
+				C5851C711771F0B200B6993D /* DetailsController.xib in Resources */,
+				C5C4882217720094002BFB7A /* GeoLocationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +350,8 @@
 				08AF4791174D2D3A00B18684 /* InfoController.m in Sources */,
 				08AF4796174D2D9E00B18684 /* TitulaController.m in Sources */,
 				089EC9E71768B08200466602 /* PredmetiController.m in Sources */,
+				C5851C701771F0B200B6993D /* DetailsController.m in Sources */,
+				C5C4882117720094002BFB7A /* GeoLocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
