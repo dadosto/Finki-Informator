@@ -22,6 +22,8 @@
 		086690FC174C24E40090828B /* NasokiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086690FA174C24E40090828B /* NasokiController.m */; };
 		086690FD174C24E40090828B /* NasokiController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086690FB174C24E40090828B /* NasokiController.xib */; };
 		089EC9E71768B08200466602 /* PredmetiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 089EC9E61768B08200466602 /* PredmetiController.m */; };
+		08A3DB11177AEEBE001049F2 /* UpisiRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A3DB0F177AEEBE001049F2 /* UpisiRootController.m */; };
+		08A3DB12177AEEBE001049F2 /* UpisiRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A3DB10177AEEBE001049F2 /* UpisiRootController.xib */; };
 		08A68EB2174CDC3500021DB9 /* NasokaDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A68EB1174CDC3500021DB9 /* NasokaDetailController.m */; };
 		08A68EB5174CEC5800021DB9 /* NasokaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A68EB4174CEC5700021DB9 /* NasokaCell.m */; };
 		08A68EB7174CEC8800021DB9 /* NasokaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A68EB6174CEC8800021DB9 /* NasokaCell.xib */; };
@@ -87,6 +89,9 @@
 		086690FB174C24E40090828B /* NasokiController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NasokiController.xib; sourceTree = "<group>"; };
 		089EC9E51768B08200466602 /* PredmetiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredmetiController.h; sourceTree = "<group>"; };
 		089EC9E61768B08200466602 /* PredmetiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredmetiController.m; sourceTree = "<group>"; };
+		08A3DB0E177AEEBE001049F2 /* UpisiRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpisiRootController.h; sourceTree = "<group>"; };
+		08A3DB0F177AEEBE001049F2 /* UpisiRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpisiRootController.m; sourceTree = "<group>"; };
+		08A3DB10177AEEBE001049F2 /* UpisiRootController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpisiRootController.xib; sourceTree = "<group>"; };
 		08A68EB0174CDC3500021DB9 /* NasokaDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NasokaDetailController.h; sourceTree = "<group>"; };
 		08A68EB1174CDC3500021DB9 /* NasokaDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NasokaDetailController.m; sourceTree = "<group>"; };
 		08A68EB3174CEC5700021DB9 /* NasokaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NasokaCell.h; sourceTree = "<group>"; };
@@ -250,6 +255,9 @@
 				93A577DA177A259500BA932B /* GeoLocationViewController.xib */,
 				93A577DD177A376100BA932B /* MyLocations.h */,
 				93A577DE177A376100BA932B /* MyLocations.m */,
+				08A3DB0E177AEEBE001049F2 /* UpisiRootController.h */,
+				08A3DB0F177AEEBE001049F2 /* UpisiRootController.m */,
+				08A3DB10177AEEBE001049F2 /* UpisiRootController.xib */,
 			);
 			path = "Finki-Informator";
 			sourceTree = "<group>";
@@ -362,6 +370,7 @@
 				93A577E9177A4A1200BA932B /* upisiIcon.png in Resources */,
 				93A577EB177A4A1900BA932B /* placesMapIcon.png in Resources */,
 				93A577ED177A4A2B00BA932B /* infoTabIcon.png in Resources */,
+				08A3DB12177AEEBE001049F2 /* UpisiRootController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +395,7 @@
 				C5851C701771F0B200B6993D /* DetailsController.m in Sources */,
 				93A577DB177A259500BA932B /* GeoLocationViewController.m in Sources */,
 				93A577DF177A376100BA932B /* MyLocations.m in Sources */,
+				08A3DB11177AEEBE001049F2 /* UpisiRootController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
