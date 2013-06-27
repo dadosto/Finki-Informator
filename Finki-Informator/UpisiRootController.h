@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface UpisiRootController : UINavigationController
+@interface UpisiRootController : UITableViewController
 
 @property (strong, nonatomic) NSArray *list;
-@property (strong, nonatomic) NSArray *nasoki;
-- (IBAction)btnCellClicked:(id)sender;
-
-- (void)pushToNavStack:(NSInteger)contr forRow:(NSInteger)row;
+@property (strong, nonatomic) NSArray *data;
+/*@property (strong, nonatomic) NSString *str1;
+@property (strong, nonatomic) NSString *str2;
+@property (strong, nonatomic) NSString *str3;
+@property (strong, nonatomic) NSString *str4;*/
+- (void)pushToNavStack:(NSInteger)row;
 @end

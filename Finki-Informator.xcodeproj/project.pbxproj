@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		082A0404177BA14000A45F97 /* PotrebniDokumentiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082A0402177BA14000A45F97 /* PotrebniDokumentiController.m */; };
+		082A0405177BA14000A45F97 /* PotrebniDokumentiController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082A0403177BA14000A45F97 /* PotrebniDokumentiController.xib */; };
+		082A0409177BA15C00A45F97 /* PotrebniPredmetiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082A0407177BA15C00A45F97 /* PotrebniPredmetiController.m */; };
+		082A040A177BA15C00A45F97 /* PotrebniPredmetiController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082A0408177BA15C00A45F97 /* PotrebniPredmetiController.xib */; };
+		082A040E177BA1D200A45F97 /* UpisiPocetnaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082A040C177BA1D200A45F97 /* UpisiPocetnaController.m */; };
+		082A040F177BA1D200A45F97 /* UpisiPocetnaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082A040D177BA1D200A45F97 /* UpisiPocetnaController.xib */; };
+		082A0413177BA1E200A45F97 /* StipendiiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082A0411177BA1E200A45F97 /* StipendiiController.m */; };
+		082A0414177BA1E200A45F97 /* StipendiiController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082A0412177BA1E200A45F97 /* StipendiiController.xib */; };
 		086690CE174C19190090828B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086690CD174C19190090828B /* UIKit.framework */; };
 		086690D0174C19190090828B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086690CF174C19190090828B /* Foundation.framework */; };
 		086690D2174C19190090828B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086690D1174C19190090828B /* CoreGraphics.framework */; };
@@ -67,6 +75,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		082A0401177BA14000A45F97 /* PotrebniDokumentiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotrebniDokumentiController.h; sourceTree = "<group>"; };
+		082A0402177BA14000A45F97 /* PotrebniDokumentiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PotrebniDokumentiController.m; sourceTree = "<group>"; };
+		082A0403177BA14000A45F97 /* PotrebniDokumentiController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PotrebniDokumentiController.xib; sourceTree = "<group>"; };
+		082A0406177BA15C00A45F97 /* PotrebniPredmetiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotrebniPredmetiController.h; sourceTree = "<group>"; };
+		082A0407177BA15C00A45F97 /* PotrebniPredmetiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PotrebniPredmetiController.m; sourceTree = "<group>"; };
+		082A0408177BA15C00A45F97 /* PotrebniPredmetiController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PotrebniPredmetiController.xib; sourceTree = "<group>"; };
+		082A040B177BA1D200A45F97 /* UpisiPocetnaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpisiPocetnaController.h; sourceTree = "<group>"; };
+		082A040C177BA1D200A45F97 /* UpisiPocetnaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpisiPocetnaController.m; sourceTree = "<group>"; };
+		082A040D177BA1D200A45F97 /* UpisiPocetnaController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpisiPocetnaController.xib; sourceTree = "<group>"; };
+		082A0410177BA1E200A45F97 /* StipendiiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StipendiiController.h; sourceTree = "<group>"; };
+		082A0411177BA1E200A45F97 /* StipendiiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StipendiiController.m; sourceTree = "<group>"; };
+		082A0412177BA1E200A45F97 /* StipendiiController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StipendiiController.xib; sourceTree = "<group>"; };
 		086690CA174C19190090828B /* Finki-Informator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finki-Informator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		086690CD174C19190090828B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		086690CF174C19190090828B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -258,6 +278,18 @@
 				08A3DB0E177AEEBE001049F2 /* UpisiRootController.h */,
 				08A3DB0F177AEEBE001049F2 /* UpisiRootController.m */,
 				08A3DB10177AEEBE001049F2 /* UpisiRootController.xib */,
+				082A0401177BA14000A45F97 /* PotrebniDokumentiController.h */,
+				082A0402177BA14000A45F97 /* PotrebniDokumentiController.m */,
+				082A0403177BA14000A45F97 /* PotrebniDokumentiController.xib */,
+				082A0406177BA15C00A45F97 /* PotrebniPredmetiController.h */,
+				082A0407177BA15C00A45F97 /* PotrebniPredmetiController.m */,
+				082A0408177BA15C00A45F97 /* PotrebniPredmetiController.xib */,
+				082A040B177BA1D200A45F97 /* UpisiPocetnaController.h */,
+				082A040C177BA1D200A45F97 /* UpisiPocetnaController.m */,
+				082A040D177BA1D200A45F97 /* UpisiPocetnaController.xib */,
+				082A0410177BA1E200A45F97 /* StipendiiController.h */,
+				082A0411177BA1E200A45F97 /* StipendiiController.m */,
+				082A0412177BA1E200A45F97 /* StipendiiController.xib */,
 			);
 			path = "Finki-Informator";
 			sourceTree = "<group>";
@@ -371,6 +403,10 @@
 				93A577EB177A4A1900BA932B /* placesMapIcon.png in Resources */,
 				93A577ED177A4A2B00BA932B /* infoTabIcon.png in Resources */,
 				08A3DB12177AEEBE001049F2 /* UpisiRootController.xib in Resources */,
+				082A0405177BA14000A45F97 /* PotrebniDokumentiController.xib in Resources */,
+				082A040A177BA15C00A45F97 /* PotrebniPredmetiController.xib in Resources */,
+				082A040F177BA1D200A45F97 /* UpisiPocetnaController.xib in Resources */,
+				082A0414177BA1E200A45F97 /* StipendiiController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +432,10 @@
 				93A577DB177A259500BA932B /* GeoLocationViewController.m in Sources */,
 				93A577DF177A376100BA932B /* MyLocations.m in Sources */,
 				08A3DB11177AEEBE001049F2 /* UpisiRootController.m in Sources */,
+				082A0404177BA14000A45F97 /* PotrebniDokumentiController.m in Sources */,
+				082A0409177BA15C00A45F97 /* PotrebniPredmetiController.m in Sources */,
+				082A040E177BA1D200A45F97 /* UpisiPocetnaController.m in Sources */,
+				082A0413177BA1E200A45F97 /* StipendiiController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -110,31 +110,16 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"SemestriCell";
+    static NSString *CellIdentifier = @"PredmetiCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
     
     // Configure the cell....
     
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        //[cell setBackgroundColor:[UIColor clearColor]];
     }
-    
-    // Configure the cell...
-    
-    
-    /*UIButton *btnInfo = [UIButton buttonWithType:UIButtonTypeCustom];
-    btnInfo = [[UIButton alloc] initWithFrame:CGRectMake(75, 5, 70, 35)];
-    UIImage *imgInfo = [UIImage imageNamed:@"info.png"];
-    [btnInfo setBackgroundImage:whiteBg forState:UIControlStateNormal];
-    [btnInfo setImage:imgInfo forState:UIControlStateNormal];*/
-    
-    
-    //[btnInfo addTarget:self action:@selector(btnCellClicked:) forControlEvents:UIControlEventTouchUpInside];
-    //[cell addSubview:btnInfo];
-    
+
     UIImage *whiteBg = [UIImage imageNamed:@"white_bg"];
     
     UIButton *btnT = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -142,26 +127,11 @@
     UIImage *imgT = [UIImage imageNamed:@"twitter_logo.jpeg"];
     [btnT setBackgroundImage:whiteBg forState:UIControlStateNormal];
     [btnT setImage:imgT forState:UIControlStateNormal];
-    //[btnInfo setImage:[NSString stringWithFormat:@"brick-1.png"]];
-    //btnT.tag=1;
     [btnT addTarget:self action:@selector(checkButtonTapped:event:) forControlEvents:UIControlEventTouchUpInside];
     cell.accessoryView = btnT;
-    
-    /*UIImage *image = [UIImage imageNamed:@"twitter_logo.jpeg"];
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    CGRect frame = CGRectMake(0.0, 0.0, image.size.width, image.size.height);
-    button.frame = frame;   // match the button's size with the image size
-    
-    [button setImage:image forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(btnCellClicked:event:) forControlEvents:UIControlEventTouchUpInside];
-    button.backgroundColor = [UIColor clearColor];
-    cell.accessoryView = button;*/
-    
     NSUInteger row = [indexPath row];
     PFObject *rowTitle = [list objectAtIndex:row];
     cell.textLabel.text = [rowTitle objectForKey:@"subject"];
-    //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-    //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
